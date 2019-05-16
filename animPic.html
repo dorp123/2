@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Pic</title>
+</head>
+
+<body>
+    <img src="#" alt="" id="bob">
+    <script>
+        var i = 0;
+
+        function brandon() {
+            var pic = ["bob1.jpg", "bob2.png", "bob3.jpg", "bob4.jpg", "bob5.png"];
+            //var num = pic[Math.floor(Math.random() * pic.length)];
+            if (i < pic.length) {
+                document.getElementById("bob").src = pic[i];
+                i++;
+            } else {
+                i = 0;
+            }
+        }
+        setInterval("brandon()", 500);
+    </script>
+</body>
+
+</html>
